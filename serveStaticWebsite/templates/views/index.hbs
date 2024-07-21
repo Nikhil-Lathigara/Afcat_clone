@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {{>nav}}{{!--partials--}}
+    {{>header}} {{!--partials--}}
+    <section id="main">
+        <div class="main_cards">
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path fill-rule="evenodd"
+                        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg>
+                <h2>Life in IAF</h2>
+                <p>
+                    As an Officer, a warrior, in the Air Force, you’re tasked with upholding the constitution and protecting India’s freedom. The responsibility is enormous, but its not only about work its also about living well.
+                </p>
+            </div>
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                    <path
+                        d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                </svg>
+                <h2>SELECTION</h2>
+                <p>
+                    Explore selection process to be an Indian Air Force Officer. Selection depends on how you perform in written tests, interviews, medical fitness test and All India merit list.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./images/main/motto.svg" width="50" height="50" alt="" srcset="">
+                <h2>MOTTO OF IAF</h2>
+                <p>
+                    The Motto of Indian Air Force (Touch the sky with Glory) has been taken from eleventh chapter of the Gita, the Discourse given by Lord Krishna to Arjuna on the battlefield of Kurukshetra during the Great War of Mahabharata.
+                </p>
+            </div>
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <h2>CAREER</h2>
+                <p>
+                    An officer is a member of an armed force or uniformed service who holds a position of authority. To be able to lead and control, requires the ability to motivate yourself, inspire others and make tough decisions efficiently
+                </p>
+            </div>
+        </div>
+        <div class="main_news">
+
+        </div>
+
+
+    </section>
+
+    <a href="#top" id="scroll_to_top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+    </a>
+    <section id="news" class="news">
+        <div class="container">
+            <div class="heading">
+                NEWS
+            </div>
+
+            <marquee class="marquee1" style="" behavior="" direction="UP" onmouseover="this.stop()" onmouseout="this.start()">
+                <p>Admit Card for AFCAT 02/2021 is available for download through Candidate Login from 20 August 2021 (11: 00 AM) onward. Please verify the details specifically Name, DoB, Gender, Photograph, Signature etc. and read complete instructions
+                    which are to be strictly adhered to. Carry a printed copy of the Admit Card along with mandatory documents to the exam centre as per the scheduled date and time, as given in the Admit Card.
+                </p>
+                <br><br><br>
+                <p> THE JUL 2021 COURSE AT AFA, DUNDIGAL WOULD COMMENCE FROM 13 SEP 21. REPORTING DATE FOR ALL CANDIDATES FEATURING IN MERIT LIST IS FROM 05 SEP 21 TO 07 SEP 21. RECEPTION COUNTER WOULD BE SET UP AT HYDERABAD AIRPORT AND SECUNDERABAD RAILWAY
+                    STATION. FOR MERIT LIST </p>
+                <br><br><br>
+                <a target="_blank" style="color: white;text-align: justify;" href="assets/images/news/AFCAT_02_2021/AFCAT Notification.pdf" download="">Click here to download Notification/Instructions for AFCAT 02/2021</a>
+                <br><br><br>
+                <a target="_blank" style="color: white;text-align: justify;" href="assets/images/news/AFCAT_02_2021/Employment news AFCAT 02-2021.pdf" download="">Click here to View/Download advertisement for AFCAT 02/2021 </a>
+            </marquee>
+
+        </div>
+        <hr>
+        <div class="container2">
+            <div class="exp">
+    </section>
+    <section id="main">
+        <div class="exp">
+            <h3>EXPLORE CAREER</h3>
+            <p>Working in the Indian Air Force makes you strong enough and teaches you not to substitute words for actions, not to seek the path of comfort, but to face the stress and spur of difficulty and challenge, to learn to stand up in the storm. It
+                gives you a temper of the will, a quality of the imagination, a vigour of the emotions, a predominance of courage and an appetite for adventure over the love of ease.</p>
+            <br>
+            <p>Face The challenge...be the Airwarrior</p>
+        </div>
+        <h3 id="career">CAREER AS PER BRANCHES</h3>
+        <div class="main_cards2">
+
+            <div class="card2">
+                <img src="./images/career/career1.jpg" alt="">
+                <h2>FLYING BRANCH</h2>
+                <p>
+                    Fly high by joining the flying branch of the IAF. You will be trained as a Fighter Pilot or a Helicopter Pilot or a Transport Pilot and are part of various peace and war time missions.
+                </p>
+            </div>
+            <div class="card2">
+                <img src="./images/career/career2.jfif" alt="">
+                <h2>GROUND DUTY (TECHNICAL) BRANCH</h2>
+                <p>
+                    As an officer in the Ground Duty (Technical) Branch, you propel and manage your team to ensure that the Indian Air Force remains airworthy. You would be in charge of some of the most sophisticated equipment in the world by joining one of the sub branches
+                    based on your qualification.
+                </p>
+            </div>
+            <div class="card2">
+                <img src="./images/career/career3.jpg" alt="">
+                <h2>GROUND DUTY (NON-TECHNICAL) BRANCH</h2>
+                <p>
+                    Managing human and material resources, the Ground Duty (Non-technical) Branch is the mechanism that steers the Indian Air Force.
+                </p>
+            </div>
+
+        </div>
+        <h3 id="career">CAREER AS PER QUALIFICATION</h3>
+        <div class="main_cards2">
+            <div class="card2">
+                <img src="./images/career/career4.jpg" alt="">
+                <h2>10+2</h2>
+                <p>
+                    The valiant boys could be part of the Indian Air Force family by applying for NDA( National Defence Academy)
+                </p>
+            </div>
+            <div class="card2">
+                <img src="./images/career/career5.jpg" alt="">
+                <h2>GRADUATE</h2>
+                <p>
+                    As a graduate, you can fly into a challenging and rewarding career in the Air Force by applying for the suitable branch. Depending upon your educational qualification, you could apply for different branches.
+                </p>
+            </div>
+            <div class="card2">
+                <img src="./images/career/career6.jpg" alt="">
+                <h2>POST GRADUATE</h2>
+                <p>
+                    As a Post Graduate you can join as an Officer in Education and Meteorology branch.
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="gallery">
+            <h3>IMAGE GALLERY</h3>
+            <div class="img">
+                <img src="./images/gallery/img1.jpg" alt="">
+                <img src="./images/gallery/img2.jpg" alt="">
+                <img src="./images/gallery/img3.jpg" alt="">
+                <img src="./images/gallery/img4.jpg" alt="">
+                <img src="./images/gallery/img5.jpg" alt="">
+            </div>
+        </div>
+        <div class="img_button">
+            <div class="button">VIEW ALL IMAGES</div>
+            <div class="button">VIEW ALL VIDEOS</div>
+        </div>
+    </section>
+
+   {{>footer}}
+</body>
+
+</html>
